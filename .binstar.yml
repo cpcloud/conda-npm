@@ -9,7 +9,7 @@ platform:
   - win-64
 
 script:
-  - conda config add --channels cpcloud
+  - conda config --add channels cpcloud
   - conda build conda.recipe
 
 build_targets: conda
