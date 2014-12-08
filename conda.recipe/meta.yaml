@@ -1,0 +1,24 @@
+package:
+  name: npm
+  version: "1.4.12"
+
+source:
+  fn: npm-1.4.12.zip # [win]
+  url: https://nodejs.org/dist/npm/npm-1.4.12.zip # [win]
+  fn: npm-1.4.12.tgz # [unix]
+  url: https://nodejs.org/dist/npm/npm-1.4.12.tgz # [unix]
+
+requirements:
+  build:
+    - nodejs
+  run:
+    - nodejs
+
+test:
+  commands:
+    - npm help
+    - npm version
+
+about:
+  home: http://nodejs.org/dist/npm
+  license: V8
